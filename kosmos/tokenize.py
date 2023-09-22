@@ -23,6 +23,7 @@ class Tokenizer:
         
         self.img_token = "<img>"
         self.img_token_close = "</img>"
+        
         self.img_token_id = self.sp_model.piece_to_id(self.img_token)
         self.img_token_close_id = self.sp_model.piece_to_id(self.img_token_close)
 
