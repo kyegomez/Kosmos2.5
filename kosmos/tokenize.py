@@ -26,11 +26,10 @@ class Tokenizer:
         self.img_token_id = self.sp_model.piece_to_id(self.img_token)
         self.img_token_close_id = self.sp_model.piece_to_id(self.img_token_close)
 
-
-
         logger.info(
             f"#Words: {self.n_words}, - BOS ID: {self.bos_id} - EOS ID: {self.eos_id}"
         )
+        
         assert self.sp_model.vocab_size() == self.sp_model.get_piece_size()
 
     def encode(
