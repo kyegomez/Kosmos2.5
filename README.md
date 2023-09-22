@@ -12,6 +12,13 @@ My implementation of Kosmos2.5 from Microsoft research and the paper: "KOSMOS-2.
 
 
 # Install
+`pip install kosmos2-torch`
+
+
+# Usage
+```
+
+```
 
 
 # Dataset Strategy
