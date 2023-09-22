@@ -1,11 +1,10 @@
 import torch
 from kosmos.model import Kosmos
 
-#text
-text = torch.randint(0, 256, (1, 1024)).cuda()
+#usage
 img = torch.randn(1, 3, 256, 256)
-
-#multimodal GPT4
+text = torch.randint(0, 20000, (1, 1024))
 
 model = Kosmos()
-model = Kosmos(text, img)
+output = model(img, text)
+print(output)
