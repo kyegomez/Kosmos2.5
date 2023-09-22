@@ -13,8 +13,6 @@ from einops.layers.torch import Rearrange
 from torch import Tensor, einsum, nn
 
 from kosmos.attend import Attend, CascadingHeads, Intermediates
-from kosmos.autoregressive import AutoregressiveWrapper
-
 # constants
 
 DEFAULT_DIM_HEAD = 64

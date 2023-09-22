@@ -54,6 +54,8 @@ class Kosmos(nn.Module):
             )
         )
 
+        self.decoder = AutoregressiveWrapper(self.decoder)
+
     def forward(self, img, text):
         try:    
             encoded = self.encoder(img, return_embeddings=True)
