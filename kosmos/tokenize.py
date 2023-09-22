@@ -8,7 +8,7 @@ logger = getLogger(__name__)
 class Tokenizer:
     def __init__(
         self,
-        model_path: str
+        model_path: str = None
     ):
         assert os.path.isfile(model_path), model_path
 
@@ -29,7 +29,7 @@ class Tokenizer:
         logger.info(
             f"#Words: {self.n_words}, - BOS ID: {self.bos_id} - EOS ID: {self.eos_id}"
         )
-        
+
         assert self.sp_model.vocab_size() == self.sp_model.get_piece_size()
 
     def encode(
