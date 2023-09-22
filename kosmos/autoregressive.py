@@ -224,6 +224,7 @@ class AutoregressiveWrapper(Module):
             rand = torch.randn(inp.shape, device = x.device)
             rand[:, 0] = -torch.finfo(rand.dtype).max # first token should not be masked out
             num_mask = min(int(seq * self.mask_prob), seq - 1)
+            
             indices = rand.topk(num_mask, dim = -1).indices
             mask = ~torch.zeros_like(inp).scatter(1, indices, 1.).bool()
             kwargs.update(self_attn_context_mask = mask)
