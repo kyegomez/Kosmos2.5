@@ -1,12 +1,9 @@
 import torch
 from torch import nn
-from zeta import (
-    AutoregressiveWrapper,
-    Decoder,
-    Encoder,
-    Transformer,
-    ViTransformerWrapper,
-)
+
+from kosmos.autoregressive import AutoregressiveWrapper
+from kosmos.transformer import Decoder, Encoder, Transformer, ViTransformerWrapper
+
 
 class Kosmos(nn.Module):
     def __init__(

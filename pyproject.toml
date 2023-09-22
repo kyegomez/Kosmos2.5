@@ -27,8 +27,9 @@ packages = [
 
 [tool.poetry.dependencies]
 python = "^3.6"
-zeta = "*"
 torch = "*"
+einops = "*"
+sentencepiece = "*"
 
 
 
