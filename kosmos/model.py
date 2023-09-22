@@ -26,7 +26,6 @@ class Kosmos(nn.Module):
         alibi_num_heads=12,
         rotary_xpos=True,
         attn_flash=True,
-        attn_one_kv_head=True,
         qk_norm=True,
     ):
         super(Kosmos, self).__init__()
