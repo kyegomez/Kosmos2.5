@@ -1,12 +1,12 @@
 from math import ceil, log
-from typing import Optional, Union, List
+from typing import List, Optional, Union
 
 import torch
+import torch.nn.functional as F
+from einops import pack, rearrange, unpack
 from torch import nn
 from torch.nn import Module
-import torch.nn.functional as F
 
-from einops import rearrange, pack, unpack
 
 def exists(val):
     return val is not None
