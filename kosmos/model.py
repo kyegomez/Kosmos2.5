@@ -1,4 +1,3 @@
-import torch
 from torch import nn
 
 from kosmos.autoregressive import AutoregressiveWrapper

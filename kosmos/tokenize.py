@@ -1,7 +1,6 @@
 import os
 from logging import getLogger
 from typing import List
-
 from sentencepiece import SentencePieceProcessor
 
 logger = getLogger(__name__)
