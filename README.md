@@ -15,7 +15,6 @@ My implementation of Kosmos2.5 from Microsoft research and the paper: "KOSMOS-2.
 
 
 # Dataset Strategy
-```
 Here is a table summarizing the datasets used in the paper KOSMOS-2.5: A Multimodal Literate Model with metadata and source links:
 
 | Dataset | Modality | # Samples | Domain | Source | 
@@ -29,7 +28,7 @@ Here is a table summarizing the datasets used in the paper KOSMOS-2.5: A Multimo
 | DOCX | Text + Markdown | 1.1M pages | WORD documents | Web crawl |
 | LaTeX | Text + Markdown | 3.7M pages | Research papers | [Link](https://arxiv.org/) |
 | HTML | Text + Markdown | 6.3M pages | Webpages | [Link](https://www.tensorflow.org/datasets/catalog/c4) |
-```
+
 
 
 # License
