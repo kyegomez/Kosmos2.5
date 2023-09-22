@@ -16,7 +16,6 @@ My implementation of Kosmos2.5 from Microsoft research and the paper: "KOSMOS-2.
 
 # Dataset Strategy
 ```
-
 Here is a table summarizing the datasets used in the paper KOSMOS-2.5: A Multimodal Literate Model with metadata and source links:
 
 | Dataset | Modality | # Samples | Domain | Source | 
